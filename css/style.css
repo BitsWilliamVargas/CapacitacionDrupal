@@ -1,0 +1,65 @@
+
+.navbar{
+  height: 2.2rem;
+  background: black;
+}
+#dropdownMenuButton{
+  font-size: small;
+  color: rgb(187 175 175);
+  border: none;
+}
+
+#dropdown:hover{
+  color: #17a2b8;
+}
+.navbar-nav{
+  margin-right: 3rem;
+  font-size: small;
+}
+.navbar-pri{
+  background: cornsilk;
+  height: 3rem;
+  display: contents;
+}
+.menu-item{
+  font-size: small;
+    padding: 1rem;
+    font-weight: 600;
+}
+.nav-link{
+margin-left: 10rem;
+font-size: small;
+align-items: inherit;
+color: rgb(204, 185, 185);
+}
+.nav-link:hover{
+  background-color:#17a2b8!important
+  }
+
+
+  .is-active{
+    color: rgb(76 71 71);
+  }
+
+.is-active:hover{
+  color: #17a2b8;
+}
+
+.fash{
+  color: rgb(76 71 71);
+}
+
+.form-control{
+  height: 50%;
+}
+
+.dropdown-toggle{
+  height: 2.2rem;
+  background: black;
+}
+
+.navbar-banner{
+  display: -webkit-box;
+    border: none;
+    height: 3rem;
+}

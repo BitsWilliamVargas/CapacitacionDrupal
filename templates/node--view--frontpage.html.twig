@@ -1,0 +1,23 @@
+<article{{ attributes }}>
+  <div class="container mt-4" style="width: 70%;">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="{{file_url(node.field_image.entity.uri.value)}}" alt="" class="img-fluid">
+          </div>
+          <div class="col-md-5 mt-7">
+            <h3>
+                {{ title_prefix }}
+                {% if not page %}
+                <h2{{ title_attributes }} class="text-black">
+                <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+               </h2>
+                {% endif %}
+                {{ title_suffix }}
+            </h3>
+            <p style="font-size: small;">
+              {{ node.body.0.value }}
+            </p>
+          </div>
+      </div>
+    </div>
+</article>

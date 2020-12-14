@@ -1,0 +1,20 @@
+name: Helpet
+type: theme
+description: Cuarto theme creado en drupal
+version: Version
+base theme: stable
+core: 8.x
+core_version_requirement: ^8 || ^9
+
+libraries:
+  - helpet/global-styling
+  - helpet/global-scripts
+
+regions:
+ header: 'Header'
+ page_top: 'Page top'
+ primary_menu: 'Primary menu'
+ secondary_menu: 'Secondary menu'
+ content: 'Content'
+ sidebar_first: 'Sidebar first'
+ footer: 'Footer first'
