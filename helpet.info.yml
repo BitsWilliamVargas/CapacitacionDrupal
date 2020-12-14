@@ -17,4 +17,4 @@ regions:
  secondary_menu: 'Secondary menu'
  content: 'Content'
  sidebar_first: 'Sidebar first'
- footer: 'Footer first'
+ banner: 'banner'
