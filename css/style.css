@@ -63,3 +63,49 @@ color: rgb(204, 185, 185);
     border: none;
     height: 3rem;
 }
+
+.tab{
+  color: rgb(77, 70, 70);
+  line-height : 5px;
+  font-weight: 500;
+}
+.tab-tit{
+  font-weight: 700;
+  color: rgb(99 89 89);
+}
+li{
+  line-height: 25px;
+}
+/* -------------------section fanpage style -------------------------  */
+.cont{
+  background-color: rgb(54, 52, 52);
+  height: 10rem;
+  padding: 4rem;
+}
+.title-big{
+  color: white;
+  font-size: x-large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  line-height: 1px;
+}
+.title-big-two{
+  color: white;
+  font-size: x-large;
+}
+
+.cont2{
+  background-color: rgb(46, 145, 243);
+  height: 10rem;
+  padding: 4rem;
+  display: flex;
+}
+.title-big-tree{
+  color: white;
+  font-size: x-large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  line-height: 1px;
+}
+.title-big-four{
+  color: white;
+  font-size: x-large;
+}

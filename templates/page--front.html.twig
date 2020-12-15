@@ -1,34 +1,15 @@
 <div class="layout-container">
-
- {% if page.header %}
-<header>
-<nav class="navbar navbar-expand-lg navbar-light bg-dark">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-  </button>
-   <div class="dropdown offset-3 bg-dark" id="dropdown">
-          <button class="btn btn-secondary dropdown-toggle bg-dark" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Currency:
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">USD</a>
-            <a class="dropdown-item" href="#">GBP</a>
-          </div>
-        </div>
-   {{ page.header }}
-</nav>
-<header>
-{% endif %}
-{% if page.page_top %}
-<div class="layaud-banner-top" role="contentinfo">
-           {{ page.page_top }}
-</div>
-  {% endif %}
+{% include "@helpet/partials/header.html.twig" %}
 
 {% if page.primary_menu %}
   <nav class="navbar-pri navbar-expand-lg navbar-light bg-light">
    {{ page.primary_menu }}
    </nav>
+{% endif %}
+{% if page.page_top %}
+<div class="layaud-banner-top" role="contentinfo">
+           {{ page.page_top }}
+</div>
 {% endif %}
 
 {% if page.banner %}
@@ -36,6 +17,7 @@
     {{ page.banner }}
 </div>
 {% endif %}
+
 <div class="container ">
    <div class="row text-center">
    <div class="col-md-12">
@@ -45,11 +27,25 @@
 </div>
 
        {{ page.sidebar_first }}
+<div class="container text-center" style="width: 65%">
+  <div class="container">
+    <div class="row">
+      {% if page.socialmedia %}
+      {{ page.socialmedia }}
+      {% endif %}
+      {% if page.marca %}
+      {{ page.marca }}
+      {% endif %}
+
+    </div>
+  </div>
+</div>
+
 
 {% if page.secondary_menu %}
 <nav class="navbar-banner navbar-expand-lg navbar-dark bg-dark mt-2">
    {{ page.secondary_menu  }}
 </nav>
 {% endif %}
-
+{{ page.footer }}
 </div>

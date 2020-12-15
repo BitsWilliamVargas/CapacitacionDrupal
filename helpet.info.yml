@@ -17,4 +17,7 @@ regions:
  secondary_menu: 'Secondary menu'
  content: 'Content'
  sidebar_first: 'Sidebar first'
+ socialmedia: 'socialmedia'
+ marca: 'marca'
  banner: 'banner'
+ footer: 'footer'
