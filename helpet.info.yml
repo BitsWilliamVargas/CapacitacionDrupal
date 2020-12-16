@@ -18,6 +18,5 @@ regions:
  content: 'Content'
  sidebar_first: 'Sidebar first'
  socialmedia: 'socialmedia'
- marca: 'marca'
  banner: 'banner'
- footer: 'footer'
+ breadcrumb: 'breadcrumb'

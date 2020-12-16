@@ -1,44 +1,42 @@
 <div class="layout-container">
 {% include "@helpet/partials/header.html.twig" %}
-
-{% if page.primary_menu %}
-  <nav class="navbar-pri navbar-expand-lg navbar-light bg-light">
-   {{ page.primary_menu }}
-   </nav>
-{% endif %}
-{% if page.page_top %}
-<div class="layaud-banner-top" role="contentinfo">
-           {{ page.page_top }}
-</div>
-{% endif %}
+{% include "@helpet/partials/primary_menu.html.twig" %}
 
 {% if page.banner %}
-<div>
     {{ page.banner }}
+{% endif %}
+
+{% if page.sidebar_first %}
+      {{ page.sidebar_first }}
+{% endif %}
+
+{% if page.page_top %}
+<div class="layaud-banner-top" role="contentinfo">
+    {{ page.page_top }}
 </div>
 {% endif %}
+
 
 <div class="container ">
    <div class="row text-center">
-   <div class="col-md-12">
+    <div class="col-md-12">
       {{ page.content }}
+    </div>
    </div>
 </div>
-</div>
-
-       {{ page.sidebar_first }}
+<div class="section mt-4" id="footer">
+{% if page.breadcrumb %}
+    {{ page.breadcrumb }}
+{% endif %}
 <div class="container text-center" style="width: 65%">
   <div class="container">
     <div class="row">
       {% if page.socialmedia %}
       {{ page.socialmedia }}
       {% endif %}
-      {% if page.marca %}
-      {{ page.marca }}
-      {% endif %}
-
     </div>
-  </div>
+   </div>
+</div>
 </div>
 
 
@@ -49,3 +47,4 @@
 {% endif %}
 {{ page.footer }}
 </div>
+

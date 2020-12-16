@@ -109,3 +109,26 @@ li{
   color: white;
   font-size: x-large;
 }
+
+.card{
+  font-size: small;
+  background-color: rgb(241 255 253);
+  border: none;
+}
+
+#footer{
+  background-color: rgb(247 253 252);
+}
+
+.tab{
+  color: rgb(77, 70, 70);
+  line-height : 5px;
+  font-weight: 500;
+}
+.tab-tit{
+  font-weight: 700;
+  color: rgb(99 89 89);
+}
+li{
+  line-height: 25px;
+}
